@@ -20,11 +20,13 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "types": ["vite/client"],
-    "baseUrl": ".",
+    "baseUrl": "./src",
+    "rootDir": "./src",
     "paths": {
-      "@/*": ["./src/*"]
+      "@auth/*": ["auth/*"],
+      "@features/*": ["features/*"]
     }
   },
-  "include": [ "vite.config.ts",  ".eslintrc.cjs","src"],
+  "include": ["vite.config.ts", ".eslintrc.cjs", "src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
